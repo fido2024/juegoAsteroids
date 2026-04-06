@@ -12,3 +12,11 @@ ctx.fillRect(50, 50, 100, 60);
 ctx.fillStyle = "white";
 ctx.fillRect(250, 250, 200, 100);
 
+//se puede escribir texto en el canvas
+ctx.font = "20px Arial";
+ctx.fillStyle = "yellow";
+ctx.fillText("Hola mundoooo", 200, 80);
+
+ctx.font = "20px Arial";
+ctx.fillStyle = "yellow";
+ctx.fillText("Hola a todos", 300, 120);
