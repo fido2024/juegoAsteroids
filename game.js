@@ -10,7 +10,7 @@ ctx.fillStyle = "white";
 ctx.fillRect(50, 50, 100, 60);
 
 ctx.fillStyle = "white";
-ctx.fillRect(250, 250, 200, 100);
+ctx.fillRect(200, 250, 200, 100);
 
 //se puede escribir texto en el canvas
 ctx.font = "20px Arial";
@@ -20,3 +20,16 @@ ctx.fillText("Hola mundoooo", 200, 80);
 ctx.font = "20px Arial";
 ctx.fillStyle = "yellow";
 ctx.fillText("Hola a todos", 300, 120);
+
+//dibujando circulos, prueba para asteorids
+ctx.beginPath();
+ctx.arc(500, 150, 40, 0, Math.PI * 2);
+ctx.strokeStyle = "white";
+ctx.lineWidth = 4;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(500, 300, 60, 30, Math.PI);
+ctx.strokeStyle = "white";
+ctx.lineWidth = 6;
+ctx.stroke();
