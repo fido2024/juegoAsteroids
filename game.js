@@ -8,26 +8,55 @@ ctx.fillStyle = "black";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
  
-// La nave empieza en el centro del canvas
-let naveX = canvas.width / 2;   // 300
-let naveY = canvas.height / 2;  // 250
+let naveX = canvas.width / 2;
+let naveY = canvas.height / 2;
+let angulo = 0;       
+let velocidad = 3;    
+let giro = 0.05;      
  
-// save() guarda el estado antes de mover el origen
-ctx.save();
+let teclas = {};
  
-// translate mueve el "origen" al centro de la nave
-// asi los puntos del triangulo son relativos a la nave
-ctx.translate(naveX, naveY);
+document.addEventListener("keydown", function(e) {
+    teclas[e.key] = true;
+});
  
-ctx.beginPath();
-ctx.moveTo(0, -20);    // punta delantera (arriba)
-ctx.lineTo(14, 16);    // esquina derecha
-ctx.lineTo(-14, 16);   // esquina izquierda
-ctx.closePath();
+document.addEventListener("keyup", function(e) {
+    teclas[e.key] = false;
+});
  
-ctx.strokeStyle = "white";
-ctx.lineWidth = 2;
-ctx.stroke();
+function dibujar() {
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
  
-// restore() devuelve el origen a (0,0)
-ctx.restore();
+    
+    if (teclas["ArrowLeft"])  angulo = angulo - giro;
+    if (teclas["ArrowRight"]) angulo = angulo + giro;
+ 
+    
+    if (teclas["ArrowUp"]) {
+        naveX = naveX + Math.sin(angulo) * velocidad;
+        naveY = naveY - Math.cos(angulo) * velocidad;
+    }
+ 
+    
+    if (naveX > canvas.width)  naveX = 0;
+    if (naveX < 0)             naveX = canvas.width;
+    if (naveY > canvas.height) naveY = 0;
+    if (naveY < 0)             naveY = canvas.height;
+ 
+    // Dibujar la nave rotada
+    ctx.save();
+    ctx.translate(naveX, naveY);
+    ctx.rotate(angulo);        
+    ctx.beginPath();
+    ctx.moveTo(0, -20);
+    ctx.lineTo(14, 16);
+    ctx.lineTo(-14, 16);
+    ctx.closePath();
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.restore();
+}
+ 
+setInterval(dibujar, 16); // dibujar cada 16ms (aprox 60fps)    
