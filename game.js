@@ -12,6 +12,7 @@ class Nave {
         this.angulo = 0;
         this.velocidad = 3;
         this.giro = 0.05;
+        this.radio = 16; // radio aproximado de la nave para colision
     }
  
     mover(teclas) {
@@ -42,6 +43,12 @@ class Nave {
         ctx.restore();
     }
  
+    // devuelve true si esta chocando con un asteroide
+    chocaCon(asteroide) {
+        let distancia = Math.hypot(this.x - asteroide.x, this.y - asteroide.y);
+        return distancia < this.radio + asteroide.radio;
+    }
+ 
 }
  
 class Asteroide {
@@ -50,7 +57,6 @@ class Asteroide {
         this.x = x;
         this.y = y;
         this.radio = radio;
-        // velocidad aleatoria en X e Y
         this.dx = (Math.random() - 0.5) * 4;
         this.dy = (Math.random() - 0.5) * 4;
     }
@@ -58,8 +64,6 @@ class Asteroide {
     mover() {
         this.x += this.dx;
         this.y += this.dy;
- 
-        // aparecer por el lado opuesto al salir
         if (this.x > canvas.width)  this.x = 0;
         if (this.x < 0)             this.x = canvas.width;
         if (this.y > canvas.height) this.y = 0;
@@ -76,31 +80,44 @@ class Asteroide {
  
 }
  
-// --- setup ---
+// setup 
 let teclas = {};
 document.addEventListener("keydown", function(e) { teclas[e.key] = true; });
 document.addEventListener("keyup",   function(e) { teclas[e.key] = false; });
  
 let nave = new Nave();
- 
-// crear 3 asteroides en posiciones distintas
 let asteroides = [
     new Asteroide(100, 80,  35),
     new Asteroide(400, 60,  25),
     new Asteroide(200, 350, 30)
 ];
  
+let juegoTerminado = false;
+ 
 function loop() {
+    if (juegoTerminado) return; // detener el loop si hay game over
+ 
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
  
     nave.mover(teclas);
     nave.dibujar();
  
-    // mover y dibujar TODOS los asteroides con un for
     for (let asteroide of asteroides) {
         asteroide.mover();
         asteroide.dibujar();
+ 
+        // revisar colision en cada frame
+        if (nave.chocaCon(asteroide)) {
+            juegoTerminado = true;
+ 
+            // muestra fin del juego en pantalla
+            ctx.fillStyle = "white";
+            ctx.font = "48px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText("FIN DEL JUEGO", canvas.width / 2, canvas.height / 2);
+            return;
+        }
     }
  
     requestAnimationFrame(loop);
