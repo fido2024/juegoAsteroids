@@ -4,8 +4,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d"); // en que dimension
 
 
-// (M)odelo - Datos - Clases - estados
-// 
+// Modelo
  
 class Nave {
     constructor() {
@@ -37,7 +36,8 @@ class Nave {
 class Asteroide {
     constructor(x, y, radio) {
         this.x = x;
-        this.y = y;a
+        this.y = y;
+        this.radio = radio;
         this.dx = (Math.random() - 0.5) * 4;
         this.dy = (Math.random() - 0.5) * 4;
     }
@@ -63,7 +63,7 @@ let modelo = {
 };
  
  
-// (V)ista - Dibuja
+// Vista
  
 let vista = {
  
@@ -99,13 +99,13 @@ let vista = {
         ctx.fillStyle = "white";
         ctx.font = "48px Arial";
         ctx.textAlign = "center";
-        ctx.fillText("FIN DEL JUEGO", canvas.width / 2, canvas.height / 2);
+        ctx.fillText("GAME OVER", canvas.width / 2, canvas.height / 2);
     }
  
 };
  
  
-// (C)ontrolador - Eventos - Logica de juego
+// Cotrolador
  
 let teclas = {};
 document.addEventListener("keydown", function(e) { teclas[e.key] = true; });
