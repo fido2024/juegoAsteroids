@@ -1,6 +1,6 @@
 # 🚀 Asteroids Canvas Engine
 
-![Asteroids Engine Logo](https://cdn-icons-png.flaticon.com/512/744/744422.png)
+![Asteroids Engine Logo](https://imagenes.hobbyconsolas.com/files/image_1280_720/uploads/imagenes/2023/09/05/6903b87e02190.jpeg)
 
 [![GitHub license](https://img.shields.io/github/license/TuUsuario/asteroids-engine?style=flat-square)](https://github.com/TuUsuario/asteroids-engine/blob/main/LICENSE)
 [![HTML5 Canvas](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
@@ -13,23 +13,23 @@ Un motor de videojuego 2D ligero y moderno construido desde cero para comprender
 
 ## Features 🚀
 
-✅ **Motor de Física Vectorial:** Descomposición trigonométrica para aceleración e inercia (`Math.sin`, `Math.cos`).
+**Motor de Física Vectorial:** Descomposición trigonométrica para aceleración e inercia (`Math.sin`, `Math.cos`).
 
-✅ **Sistema de Control Híbrido:** Soporte nativo para esquemas de control simultáneos (WASD + Flechas) mediante un Hash Map de estados `O(1)`.
+**Sistema de Control Híbrido:** Soporte nativo para esquemas de control simultáneos (WASD + Flechas) mediante un Hash Map de estados `O(1)`.
 
-✅ **Renderizado Acelerado:** Transformaciones de matriz (`translate`, `rotate`) sobre el contexto local de la nave.
+**Renderizado Acelerado:** Transformaciones de matriz (`translate`, `rotate`) sobre el contexto local de la nave.
 
-✅ **Topología Espacial:** Entorno toroidal infinito (wrapping borders).
+**Topología Espacial:** Entorno toroidal infinito (wrapping borders).
 
-✅ **100% Vanilla:** Cero dependencias, cero frameworks externos. Pura lógica matemática y JavaScript.
+**100% Vanilla:** Cero dependencias, cero frameworks externos. Pura lógica matemática y JavaScript.
 
-✅ **Performance Estable:** Game Loop optimizado y bloqueado a \~60 FPS (16ms).
+**Performance Estable:** Game Loop optimizado y bloqueado a \~60 FPS (16ms).
 
-## Screenshots 📸
+## Screenshots 
 
 *(Agrega aquí capturas de pantalla de tu nave moviéndose por el espacio)*
 
-## Instalación y Ejecución 🪟🐧🍎
+## Instalación y Ejecución 
 
 A diferencia de las aplicaciones de escritorio, este motor gráfico corre directamente en el navegador de tu preferencia, sin necesidad de compiladores ni entornos de ejecución pesados.
 
@@ -46,8 +46,7 @@ A diferencia de las aplicaciones de escritorio, este motor gráfico corre direct
 
     Si usas VS Code y quieres probar modificaciones en tiempo real, puedes instalar la extensión **Live Server** y hacer clic derecho sobre `index.html` \> *Open with Live Server*.
 
-## Controles 🎮
-
+## Controles 
 El sistema de input soporta combinaciones diagonales (ej. Avanzar + Girar) sin bloqueos:
 
 | Acción | Tecla Principal | Tecla Alternativa |
@@ -56,15 +55,14 @@ El sistema de input soporta combinaciones diagonales (ej. Avanzar + Girar) sin b
 | **Rotación Izquierda** | `A` | `Flecha Izquierda` |
 | **Rotación Derecha** | `D` | `Flecha Derecha` |
 
-## Tecnologías Utilizadas 🛠️
-
+## Tecnologías Utilizadas 
   - [HTML5 Canvas API](https://developer.mozilla.org/es/docs/Web/API/Canvas_API) - Motor de renderizado 2D
   - [JavaScript (ES6+)](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lógica y Game Loop
   - [Flaticon](https://www.flaticon.com/) - Recursos iconográficos
 
 ## Autor 👨‍💻
 
-**Ing. Fidel Vasquez**
-Desarrollador del motor y de la lógica vectorial.
+**Est. de Ingeneria Informatica Fidel Vasquez**
+Desarrollador, Diseñador, Técnico.
 
 Si este proyecto te ha sido útil para entender cómo funcionan los motores de videojuegos por debajo, considera dejar una ⭐ en el repositorio.
