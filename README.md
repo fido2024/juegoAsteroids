@@ -2,7 +2,7 @@
 
 ![Asteroids Engine Logo](https://imagenes.hobbyconsolas.com/files/image_1280_720/uploads/imagenes/2023/09/05/6903b87e02190.jpeg)
 
-[![GitHub license](https://img.shields.io/github/license/fido2024/juegoAsteroids?style=flat-square)](https://github.com/fido2024/juegoAsteroids/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/fido2024/juegoAsteroids?style=flat-square)]
 [![HTML5 Canvas](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
