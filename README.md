@@ -5,7 +5,7 @@
 [![HTML5 Canvas](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-Un motor de videojuego 2D ligero y moderno construido desde cero para comprender las bases del renderizado gráfico, la física vectorial y las transformaciones lineales espaciales. Proyecto académico desarrollado en la **Universidad Mayor de San Simón (UMSS)**.
+Un motor de videojuego 2D ligero y moderno  para comprender las bases del renderizado gráfico, la física vectorial y las transformaciones lineales espaciales. Proyecto académico desarrollado en la **Universidad Mayor de San Simón (UMSS)**.
 
 [![Descargar Código](https://img.shields.io/badge/Descargar_Código-ZIP-blue?style=for-the-badge&logo=download)](https://github.com/fido2024/juegoAsteroids/archive/refs/heads/main.zip)
 [![Jugar Demo](https://img.shields.io/badge/Jugar_Demo-Online-success?style=for-the-badge&logo=play)](https://fido2024.github.io/juegoAsteroids/)
