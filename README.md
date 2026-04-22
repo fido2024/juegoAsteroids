@@ -1,4 +1,4 @@
-# 🚀 Asteroids Canvas 
+# Asteroids Canvas 
 
 ![Asteroids Engine Logo](https://imagenes.hobbyconsolas.com/files/image_1280_720/uploads/imagenes/2023/09/05/6903b87e02190.jpeg)
 
@@ -57,7 +57,7 @@ El sistema de input soporta combinaciones diagonales (ej. Avanzar + Girar) sin b
   - [JavaScript (ES6+)](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lógica y Game Loop
   - [Flaticon](https://www.flaticon.com/) - Recursos iconográficos
 
-## Autor 👨‍💻
+## Autor 
 
 **Est. de Ingeniería Informática - Fidel Vasquez Carata**
 
