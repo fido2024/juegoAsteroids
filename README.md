@@ -9,7 +9,7 @@
 Un motor de videojuego 2D ligero y moderno construido desde cero para comprender las bases del renderizado gráfico, la física vectorial y las transformaciones lineales espaciales. Proyecto académico desarrollado en la **Universidad Mayor de San Simón (UMSS)**.
 
 [![Descargar Código](https://img.shields.io/badge/Descargar_Código-ZIP-blue?style=for-the-badge&logo=download)](https://github.com/TuUsuario/asteroids-engine/archive/refs/heads/main.zip)
-[![Jugar Demo](https://img.shields.io/badge/Jugar_Demo-Online-success?style=for-the-badge&logo=play)](https://TuUsuario.github.io/asteroids-engine/)
+[![Jugar Demo](https://img.shields.io/badge/Jugar_Demo-Online-success?style=for-the-badge&logo=play)](https://github.com/fido2024/juegoAsteroids)
 
 ## Features 🚀
 
