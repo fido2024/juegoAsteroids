@@ -19,3 +19,21 @@ h1 {
 canvas {
   border: 2px solid white;
 }
+
+/* Boton de nuevo juego debajo del canvas */
+#btnNuevoJuego {
+  margin-top: 16px;
+  padding: 10px 32px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+ 
+/* Efecto hover: se invierte el color al pasar el mouse */
+#btnNuevoJuego:hover {
+  background-color: white;
+  color: black;
+}

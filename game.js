@@ -5,6 +5,7 @@ const ctx = canvas.getContext("2d"); // en que dimension
 
 
 // Modelo
+// ---- MODEL ----
  
 class Nave {
     constructor() {
@@ -40,7 +41,25 @@ class Asteroide {
         this.radio = radio;
         this.dx = (Math.random() - 0.5) * 4;
         this.dy = (Math.random() - 0.5) * 4;
+ 
+        
+        this.puntos = [];
+        let numPuntos = 10; // cuantos vertices tiene el poligono
+ 
+        for (let i = 0; i < numPuntos; i++) {
+           
+            let angulo = (i / numPuntos) * Math.PI * 2;
+ 
+            let r = this.radio * (0.7 + Math.random() * 0.6);
+ 
+            
+            this.puntos.push({
+                x: Math.cos(angulo) * r,
+                y: Math.sin(angulo) * r
+            });
+        }
     }
+ 
     mover() {
         this.x += this.dx;
         this.y += this.dy;
@@ -51,14 +70,17 @@ class Asteroide {
     }
 }
  
-// estado global del juego
-let modelo = {
-    nave: new Nave(),
-    asteroides: [
+function crearAsteroides() {
+    return [
         new Asteroide(100, 80,  35),
         new Asteroide(400, 60,  25),
         new Asteroide(200, 350, 30)
-    ],
+    ];
+}
+ 
+let modelo = {
+    nave: new Nave(),
+    asteroides: crearAsteroides(),
     juegoTerminado: false
 };
  
@@ -88,24 +110,36 @@ let vista = {
     },
  
     dibujarAsteroide(asteroide) {
+        ctx.save();
+        ctx.translate(asteroide.x, asteroide.y);
+ 
+        // recorre los puntos irregulares generados en el constructor
         ctx.beginPath();
-        ctx.arc(asteroide.x, asteroide.y, asteroide.radio, 0, Math.PI * 2);
+        ctx.moveTo(asteroide.puntos[0].x, asteroide.puntos[0].y);
+ 
+        for (let i = 1; i < asteroide.puntos.length; i++) {
+            ctx.lineTo(asteroide.puntos[i].x, asteroide.puntos[i].y);
+        }
+ 
+        ctx.closePath(); 
         ctx.strokeStyle = "white";
         ctx.lineWidth = 2;
         ctx.stroke();
+ 
+        ctx.restore();
     },
  
     dibujarGameOver() {
         ctx.fillStyle = "white";
         ctx.font = "48px Arial";
         ctx.textAlign = "center";
-        ctx.fillText("GAME OVER", canvas.width / 2, canvas.height / 2);
+        ctx.fillText("FIN DEL JUEGO", canvas.width / 2, canvas.height / 2);
     }
  
 };
  
  
-// Cotrolador
+// Controlador
  
 let teclas = {};
 document.addEventListener("keydown", function(e) { teclas[e.key] = true; });
@@ -114,7 +148,6 @@ document.addEventListener("keyup",   function(e) { teclas[e.key] = false; });
 function loop() {
     if (modelo.juegoTerminado) return;
  
-    // actualizar modelo
     modelo.nave.mover(teclas);
     for (let asteroide of modelo.asteroides) {
         asteroide.mover();
@@ -123,7 +156,6 @@ function loop() {
         }
     }
  
-    // dibujar con la vista
     vista.dibujarFondo();
     vista.dibujarNave(modelo.nave);
     for (let asteroide of modelo.asteroides) {
@@ -135,6 +167,13 @@ function loop() {
         return;
     }
  
+    requestAnimationFrame(loop);
+}
+ 
+function reiniciar() {
+    modelo.nave = new Nave();
+    modelo.asteroides = crearAsteroides();
+    modelo.juegoTerminado = false;
     requestAnimationFrame(loop);
 }
  
