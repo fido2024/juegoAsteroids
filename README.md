@@ -24,9 +24,7 @@ Un motor de videojuego 2D ligero y moderno  para comprender las bases del render
 
 **Performance Estable:** Game Loop optimizado y bloqueado a \~60 FPS (16ms).
 
-## Screenshots 
 
-![Juego Inicial](assets/juego_vista_inicial.PNG)
 
 ## Instalación y Ejecución 
 
