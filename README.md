@@ -26,8 +26,8 @@ Un motor de videojuego 2D ligero y moderno construido desde cero para comprender
 
 ## Screenshots 
 
-![Nave en movimiento](assets/juego_vista_inicial.jpg)
-![Esquivando asteroides](assets/juego_vista_fin_del_juego.jpg)
+![Nave en movimiento](assets/juego_vista_inicial.PNG)
+![Esquivando asteroides](assets/juego_vista_fin_del_juego.png)
 
 ## Instalación y Ejecución 
 
