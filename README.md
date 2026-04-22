@@ -1,23 +1,15 @@
-\<div align="center"\>
-\<img src="[https://cdn-icons-png.flaticon.com/512/744/744422.png](https://www.google.com/search?q=https://cdn-icons-png.flaticon.com/512/744/744422.png)" style="width:100px;" alt="Asteroids Engine Logo"\>
+# 🚀 Asteroids Canvas Engine
 
-# Asteroids Canvas Engine
+![Asteroids Engine Logo](https://cdn-icons-png.flaticon.com/512/744/744422.png)
 
-[](https://www.google.com/search?q=https://github.com/TuUsuario/asteroids-engine/blob/main/LICENSE)
-[](https://www.google.com/search?q=https://github.com/TuUsuario/asteroids-engine/stargazers)
-[](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
-[](https://developer.mozilla.org/es/docs/Web/JavaScript)
-
-\</div\>
-
-<br>
+[![GitHub license](https://img.shields.io/github/license/TuUsuario/asteroids-engine?style=flat-square)](https://github.com/TuUsuario/asteroids-engine/blob/main/LICENSE)
+[![HTML5 Canvas](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 Un motor de videojuego 2D ligero y moderno construido desde cero para comprender las bases del renderizado gráfico, la física vectorial y las transformaciones lineales espaciales. Proyecto académico desarrollado en la **Universidad Mayor de San Simón (UMSS)**.
 
-\<div align="center"\>
-\<a href="[https://github.com/TuUsuario/asteroids-engine/archive/refs/heads/main.zip](https://www.google.com/search?q=https://github.com/TuUsuario/asteroids-engine/archive/refs/heads/main.zip)"\>\<img src="[https://img.shields.io/badge/Descargar\_Código-ZIP-blue?style=for-the-badge\&logo=download](https://www.google.com/search?q=https://img.shields.io/badge/Descargar_C%C3%B3digo-ZIP-blue%3Fstyle%3Dfor-the-badge%26logo%3Ddownload)" alt="Download"\>\</a\>
-\<a href="[https://TuUsuario.github.io/asteroids-engine/](https://www.google.com/search?q=https://TuUsuario.github.io/asteroids-engine/)"\>\<img src="[https://img.shields.io/badge/Jugar\_Demo-Online-success?style=for-the-badge\&logo=play](https://www.google.com/search?q=https://img.shields.io/badge/Jugar_Demo-Online-success%3Fstyle%3Dfor-the-badge%26logo%3Dplay)" alt="Play Demo"\>\</a\>
-\</div\>
+[![Descargar Código](https://img.shields.io/badge/Descargar_Código-ZIP-blue?style=for-the-badge&logo=download)](https://github.com/TuUsuario/asteroids-engine/archive/refs/heads/main.zip)
+[![Jugar Demo](https://img.shields.io/badge/Jugar_Demo-Online-success?style=for-the-badge&logo=play)](https://TuUsuario.github.io/asteroids-engine/)
 
 ## Features 🚀
 
@@ -46,8 +38,8 @@ A diferencia de las aplicaciones de escritorio, este motor gráfico corre direct
     Simplemente clona el repositorio o descarga el archivo ZIP, extrae los archivos y abre el archivo `index.html` con cualquier navegador moderno (Chrome, Firefox, Edge, Safari).
 
     ```bash
-    git clone https://github.com/TuUsuario/asteroids-engine.git
-    cd asteroids-engine
+    git clone https://github.com/fido2024/juegoAsteroids.git
+    cd juegoAsteroids
     ```
 
   - **Servidor de Desarrollo (Live Server)**
