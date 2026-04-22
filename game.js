@@ -74,6 +74,7 @@ function crearAsteroides() {
     return [
         new Asteroide(100, 80,  35),
         new Asteroide(400, 60,  25),
+        new Asteroide(300, 50,  20),
         new Asteroide(200, 350, 30)
     ];
 }
