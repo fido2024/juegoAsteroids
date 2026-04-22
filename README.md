@@ -26,7 +26,8 @@ Un motor de videojuego 2D ligero y moderno construido desde cero para comprender
 
 ## Screenshots 
 
-*(Agrega aquí capturas de pantalla de tu nave moviéndose por el espacio)*
+![Nave en movimiento](assets/juego_vista_inicial.jpg)
+![Esquivando asteroides](assets/juego_vista_fin_del_juego.jpg)
 
 ## Instalación y Ejecución 
 
@@ -62,6 +63,7 @@ El sistema de input soporta combinaciones diagonales (ej. Avanzar + Girar) sin b
 ## Autor 👨‍💻
 
 **Est. de Ingeniería Informática - Fidel Vasquez Carata**
+
 Desarrollador, Diseñador, Técnico.
 
 Si este proyecto te ha sido útil para entender cómo funcionan los motores de videojuegos por debajo, considera dejar una ⭐ en el repositorio.
