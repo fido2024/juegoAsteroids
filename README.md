@@ -27,7 +27,6 @@ Un motor de videojuego 2D ligero y moderno construido desde cero para comprender
 ## Screenshots 
 
 ![Juego Inicial](assets/juego_vista_inicial.PNG)
-![Colision](assets/juego_vista_fin_del_juego.PNG)
 
 ## Instalación y Ejecución 
 
