@@ -1,22 +1,64 @@
+
 body {
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-}   
- 
-h1 {
-  margin-bottom: 16px;
-  letter-spacing: 4px;
-  font-size: 24px;
 }
 
-/* el canvas tiene borde blanco*/
+h1 {
+  margin-bottom: 16px;
+  letter-spacing: 6px;
+  font-size: 28px;
+}
+
+/* contenedor de los cuadros de instrucciones */
+.instrucciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/*  cuadro de control con borde blanco y fondo oscuro */
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  min-width: 90px;
+  background-color: #111;
+}
+
+/* estilo de las teclas */
+.tecla {
+  background-color: #235963;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* descripcion debajo de cada tecla */
+.accion {
+  font-size: 12px;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+}
+
+/* el canvas tiene borde blanco para verlo claramente */
 canvas {
   border: 2px solid white;
 }
