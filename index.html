@@ -7,10 +7,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
   <h1>Asteroids</h1>
+
+  <!-- instrucciones de controles -->
+    <div class="instrucciones">
  
+    <div class="control">
+      <span class="tecla">W / ↑</span>
+      <span class="accion">Avanzar</span>
+    </div>
+ 
+    <div class="control">
+      <span class="tecla">A D / ← →</span>
+      <span class="accion">Girar</span>
+    </div>
+ 
+    <div class="control">
+      <span class="tecla">Espacio</span>
+      <span class="accion">Disparar</span>
+    </div>
+ 
+    <div class="control">
+      <span class="tecla">Enter</span>
+      <span class="accion">Nuevo juego</span>
+    </div>
+ 
+  </div>
+<!--tamaño del canvas y el nombre del id para luego usarlo en el js-->
   <canvas id="gameCanvas" width="600" height="500"></canvas>
-  <script src="game.js"></script>
+
+<!-- canvas y ctx se definen aqui primero -->
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+  </script>
+
+<!-- scripts del juego -->
+ <script src="js/modelo.js"></script>    
+<script src="js/vista.js"></script>     
+<script src="js/controlador.js"></script> 
+<script src="js/main.js"></script>     
+
 </body>
 </html>
